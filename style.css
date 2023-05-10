@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.background-image {
+    background-image: url('./Assets/CT_SkillTest_v3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.uni-padding {
+    padding: 0 10%;
+}
+
+#Topbar {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+#logo {
+    float: left;
+}
+
+#bar-details {
+    float: right;
+    margin: 10px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.background-image-history {
+    background-image: url('./Assets/history\ back.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background-image-history {
+    padding-top: 2%;
+}
+
+.number {
+    font-size: 180px;
+    color: #657791;
+}
+
+.banner-text {
+    font-size: 45px;
+    color: #414f6b;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: -127px;
+    margin-bottom: 40px;
+}
+
+.history-text {
+    padding: 0 10%;
+}
+
+#maincarousel {
+    background-color: rgba(64, 77, 99, 0.555);
+    padding: 2%;
+    position: relative;
+    margin-top: -10.5%;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-item {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.carousel-item {
+    animation: slide 8s ease-in-out infinite;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+}
+
+.section-navbar {
+    background-color: #414f6b;
+    margin-top: 5%;
+}
+
+.mountain-btn {
+    color: #b0b4be;
+    padding: 25px 10px;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 19px;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.mountain-btn:hover {
+    background-color: #b0b4be;
+    color: #414f6b;
+}
+
+.climb-text {
+    padding-left: 30%;
+    margin-top: -9%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 30%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.table-part {
+    padding: 6% 0% 0% 15%;
+    /* border: 1px solid black; */
+}
+
+.table-data {
+    padding-left: 0px;
+
+}
+
+td {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+tr:nth-child(even) {
+    background: none;
+}
+
+.mountainimage1 {
+    background-image: url('./Assets/mback.png');
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    margin: 0;
+}
+
+.mountainimage2 {
+    background-image: url('./Assets/mback2.png');
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .uni-padding {
+        padding: 0 5%;
+    }
+
+    .banner-text {
+        font-size: 30px;
+        margin-left: 0;
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+
+    .climb-text {
+        padding-left: 27%;
+        margin-top: -15%;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .table-part {
+        padding: 10% 0% 0% 0%;
+    }
+
+    .number {
+        font-size: 120px;
+    }
+
+    .background-image-history {
+        height: 84vh;
+    }
+
+    .carousel-item {
+        animation: slide 6s ease-in-out infinite;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-text {
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .climb-text {
+        padding-left: 6%;
+        margin-top: -4%;
+    }
+
+    .carousel-item {
+        animation: slide 4s ease-in-out infinite;
+    }
+
+    .background-image-history {
+        height: 94vh;
+    }
+
+    .mountainimage1{
+        height: 59vh;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .logo2 {
+        display: none;
+    }
+
+    .banner-text {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: -29px;
+        margin-bottom: 20px;
+    }
+
+    .history-text {
+        color: #f8f7f7;
+    }
+
+    .climb-text {
+        padding-left: 13%;
+        margin-top: -7%;
+    }
+
+    .carousel-item {
+        animation: slide 3s ease-in-out infinite;
+    }
+
+    .background-image-history {
+        height: 95vh;
+    }
+
+    .footertext{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .banner-text {
+        font-size: 18px;
+        margin-top: -30px;
+        margin-bottom: 10px;
+    }
+
+    .section-navbar{
+        display: flex;
+    }
+
+    .climb-text {
+        padding-left: 8%;
+        margin-top: -5%;
+    }
+
+    .carousel-item {
+        animation: slide 2s ease-in-out infinite;
+    }
+
+    .background-image-history {
+        height: 96vh;
+    }
+
+    .footertext{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner-text {
+        font-size: 16px;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    .climb-text {
+        padding-left: 10%;
+        margin-top: -5%;
+    }
+
+    .carousel-item {
+        animation: slide 2s ease-in-out infinite;
+    }
+
+    .background-image-history {
+        height: 230vh;
+    }
+}
